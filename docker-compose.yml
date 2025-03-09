@@ -1,0 +1,9 @@
+version: '3'
+services:
+  group-finder:
+    build: .
+    container_name: group-finder
+    restart: always
+    environment:
+      - BUN_ENV=production
+    tty: true
